@@ -1,16 +1,23 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-
-	<title>MNSU D2L</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/Styles/main.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lecture</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/Styles/lecture.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
 </head>
-	
 <body>
-	<header>
+  <header>
 		<img src="/Images/mnsu_D2L.png"  href="/index.html" alt="MNSU logo" width="120">
 		<h2>Minnesota State-Mankato</h2>
 		<h3>Big Ideas. Real World Thinking.</h3>
@@ -35,33 +42,43 @@
                     <li><a href="https://www.mnsu.edu/university-life/health-and-safety/student-health-services/medical-clinic/clinic-services/mental-health/#:~:text=To%20schedule%20a%20mental%20health,call%20507%2D389%2D6276.">Mental Health</a></li>
                 </ul>
             </li>
-    		<li><a href="">Tutorial</a></li>
+            <li><a href="">Content</a>
+              <ul>
+                  <li><a href="/assignment.html">Lectures</a></li>
+                  <li><a href="/discussion.html">Discussion</a></li>
+                  <li><a href="/assignment.html">Assignments</a></li>
+              </ul>
+            </li>
             <li><a href="/calendar.html">Calendar</a></li>
-    		<li><a class="lastitem" href="/PROTOTYPE/index.html">Search</a></li>         
+    		    <li><a class="lastitem" href="/PROTOTYPE/index.html">Search</a></li>         
     	</ul>
     </nav>
-    <main>
-        <aside>
-          <h2>Upcoming Assignments</h2>
-          <nav>
-            <ul>
-              <li>Assignment 1</li>
-              <li>Assignment 2</li>
-              <li>Assignment 3</li>
-              <li>Assignment 4</li>
-              <li>Assignment 5</li>
-              <li>Assignment 6</li>
-            </ul>
-          </nav>
-        </aside>
-        <article>
-           <h2> MNSU Events</h2> 
-           <img src="/Images/can_oct24-30-print.jpg" alt="Events This Week">
-        </article>
-    </main>
-    <footer>
-      <p>&copy; Copyright 2022 D2L Brightspot</p>
-    </footer>
-	
+ 
+<div id="accordion">
+  <h3>Chapter 1 slides</h3>
+  <div>
+    <h4><a href="/lecture/Chapter 01.ppt" style="color: purple">Chapter-1 slides</a></h4>
+  </div>
+  <h3>Chapter 2 slides</h3>
+  <div>
+    
+    <h4><a href="/lecture/Chapter 02.ppt" style="color: purple">Chapter-2 slides</a></h4>
+  </div>
+  <h3>Chapter 3 slides</h3>
+  <div>
+    
+    <h4><a href="/lecture/Chapter 03.ppt" style="color: purple">Chapter-3 slides</a></h4>
+  </div>
+  <h3>Chapter 4 slides</h3>
+  <div>
+    
+    <h4><a href="/lecture/chapter 04.ppt" style="color: purple">Chapter-4 slides</a></h4>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Copyright 2022 D2L Brightspot</p>
+</footer>
+
 </body>
 </html>
